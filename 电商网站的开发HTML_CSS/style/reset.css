@@ -1,0 +1,41 @@
+/*网页布局的第一步：清除格式*/
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+     font-size: 12px;
+}
+
+img{
+	border: none;
+}
+li{
+	list-style: none;
+}
+input,select, textarea{
+	outline: none;
+	border: none;
+	background: none;/*为了IE的兼容问题*/
+}
+
+a{
+	text-decoration: none;
+	color: #666666;
+}
+/*清除浮动*/
+.clearfix:after{
+	  content: "";
+	  display: block;
+	  clear: both;
+}
+.clearfix{
+	zoom:1;
+}
+/*左右浮动*/
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
